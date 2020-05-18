@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Aprendendo CSS3</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- embedded/internal CSS -->
+    <style>
+        p#embedded {
+            color: yellow;
+            background: blue
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav id="menu">
+            <ul>
+                <li><a href=#adicao>Adição de estilos</a></li>
+                <li><a href=#propriedades>Propriedades textos</a></li>
+                <li><a href=#layout>Layout e posicionamento</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="adicao">
+        <h1>Adição de estilos</h1>
+        <h2>O CSS pode ser adicionado ao html de modo:</h2>
+
+
+        <h3>Embedded/Internal CSS</h3>
+        <p id="embedded" class="subitem">Nesse modo a tag style é utilizada no head
+            do html usando o seletor, seguido, entre chaves, por propriedade
+            e valor de forma semelhante ao arquivo externo CSS. O estilo
+            é utilizado em todos os elementos especificados no seletor, assim
+            como é feito no arquivo CSS.</p>
+
+
+        <h3>Inline</h3>
+        <p class="subitem">No modo inline o style é usado como
+            atributo ao invés de tag. É utilizado no próprio
+            elemento html a se adotar o estilo desejado.
+        </p>
+        <p class="subitem" style="color:white; background:gray;">
+            This is an example of inline styling.
+        </p>
+
+
+        <h3>Externo</h3>
+        <p id="externo" class="subitem">No modo externo, um arquivo CSS
+            é criado e referenciado no html com a tag
+            link seguida dos seguintes tributos rel="stylesheet" type="text/css"
+            href="css/style.css"</p>
+    </section>
+
+
+    <section id="propriedades">
+        <h1>Propriedades de textos</h1>
+        <nav>
+            <ul>
+                <li><a href="#tipos">Tipos de Fontes</a> </li>
+                <li><a href="#tamanho">Tamanho de Fontes</a> </li>
+                <li><a href="#estilos"> Estilos de Fontes</a></li>
+                <li><a href="#color">Cor do Texto</a></li>
+                <li><a href="#alinhamento">Alinhamento de Texto</a></li>
+                <li><a href="#vertalign">Alinhamento Vertical</a></li>
+            </ul>
+        </nav>
+
+
+        <h2 id="tipos">Tipos de Fontes</h2>
+        <p> Existem os grupos genéricos de fonte e os tipos específicos de fonte. Normalmente, no arquivo css é
+            utilizado as fontes por ordem de especificidade,
+            para caso de incompatibilidade com o navegador.
+            Então, geralmente a última especificação de fonte seria a fonte genérica.
+        </p>
+        <p>É importante ressaltar que quando o nome da fonte possui mais de uma palavra
+            o nome deve ser colocado entre aspas.
+        </p>
+        <img id="fontes" src="img/fontes.jpg">
+        <hr />
+        <h3>Exemplos de fontes: </h3>
+        <div id="examples">
+            <p class="serif">
+                Parágrafo com fonte com serif. "Times New Roman" ou Times.
+            </p>
+            <p class="sansserif">
+                Parágrafo com fonte sem serif. Helvetica ou Arial.
+            </p>
+            <p class="monospace">
+                Parágrafo em fonte monospace. "Courier new" ou Courier
+            </p>
+            <p class="cursive">
+                Parágrafo em fonte com letra cursiva (Cursive).
+            </p>
+            <p class="fantasy">
+                Parágrafo em fonte fantasy.
+            </p>
+        </div>
+        <hr />
+
+
+        <h2 id="tamanho">Tamanhos de fontes</h2>
+        <p>Podemos ter diferentes tamanhos de fontes. Há mais de uma maneira de ajustar o tamanho da fonte.
+            O tamanho da fonte pode ser em medidas de pixels, percentual, descritivas entre outras.
+        </p>
+        <h3>Medidas descritivas:</h3>
+        <ul>
+            <li>
+                <p class="xxsmall">XX-Small</p>
+            </li>
+            <li>
+                <p class="xsmall">X-Small</p>
+            </li>
+            <li>
+                <p class="small">Small</p>
+            </li>
+            <li>
+                <p class="medium">Medium</p>
+            </li>
+            <li>
+                <p class="large">Large</p>
+            </li>
+            <li>
+                <p class="larger">Larger</p>
+            </li>
+            <li>
+                <p class="xlarge">X-Large</p>
+            </li>
+            <li>
+                <p class="xxlarge">XX-Large</p>
+            </li>
+        </ul>
+        <p>A medida também pode ser dada em pixel ou em, que é uma medida relativa ao tamanho padrão de
+            fonte que é 16px. Isto é, 1em=16px</p>
+        <hr />
+
+
+        <h2 id="estilos">Estilos de fontes</h2>
+        <p>As fontes podem ser em <b>negrito</b> ou <i>Itálico</i> ou normal </p>
+        <p> Os estilos de fonte podem ser definidas diretamente no html ou em CSS.</p>
+        <p class="italic">A tag i configura o texto em itálico no html enquanto no css é utilizado a propriedade
+            font-style.</p>
+        <p class="negrito">A tag b é utilizada para negrito.</p>
+        <p class="lightest">No CSS, o negrito se obtém utilizando a propriedade font-weight, e os valores podem ser
+            numerações que vão de 100 a 900
+            ou escritos como lighter, bold ou bolder.</p>
+        <p class="lighter">Lighter é utilizada para uma letra mais fina. Equivalente ao 100.</p>
+        <p class="light">A numeração 400 equivale à espessura padrão.</p>
+        <p class="bold">A numeração 700 ou bold equivale à espessura negrito, tag b em html.</p>
+        <p class="bolder">A numeração 900 ou bolder equivale à espessura super negrito.</p>
+        <hr />
+
+
+        <h2 id="color">Cor do Texto</h2>
+        <p>Podemos mudar a cor do texto utilizando a propriedade color e a cor pode ser determinada pelo modo RGB, em
+            valor hexadecimal
+            ou pelo nome da cor
+        </p>
+        <p class="vermelho">Vermelho - rgb(255,0,0)</p>
+        <p class="verde">Verde - #00ff00</p>
+        <p class="azul">Azul - blue</p>
+        <hr />
+
+
+        <h2 id="alinhamento">Alinhamento de texto</h2>
+        <h3>Para ajustar o alinhamento de texto é utilizada a propriedade text-align, podendo ter os seguintes valores:
+        </h3>
+        <p class="left">Left - O parágrafo é alinhado à <strong>esquerda.</strong></p>
+        <p class="right">Right - O parágrafo é alinhado à <strong>direita.</strong></p>
+        <p class="center">Center - O parágrafo fica <strong>centralizado.</strong></p>
+        <p class="justify"> Quando o alinhamento de texto é justificado, utiliza o valor justify. Nesse caso, cada line
+            é esticada de forma
+            que todas linhas tenham comprimentos iguais e as margens tenham o mesmo tamanho, semelhante a textos de
+            jornais e revistas.</p>
+        <hr />
+
+
+        <h2 id="vertalign">Alinhamento Vertical</h2>
+        <h3>O alinhamento vertical dita a posição da altura do elemento. A propriedade CSS é o vertical-align.</h3>
+        <table border="1" cellpadding="2" cellspacing="0" style="height: 150px;">
+            <tr>
+                <td class="top">Top</td>
+                <td class="middle">Middle</td>
+                <td class="bottom">Bottom</td>
+            </tr>
+            <tr>
+                <td class="top">Top</td>
+                <td class="middle">Middle</td>
+                <td class="bottom">Bottom</td>
+            </tr>
+        </table>
+        <p>Também há outras formas de mudar a altura do texto com a propriedade vertical-align.</p>
+        <p>This is an <span class="baseline">inline text</span> example.</p>
+        <p>This is a <span class="sub">sub line text</span> example.</p>
+        <p> This is a <span class="super">super line text</span> example.</p>
+        <p> This is a <span class="pixel">pixel</span> example.</p>
+        <div class="paragraph">
+            Display: inline-table; and display: table-cell; styling rules are applied to make the vertical-align
+            property work with divs.
+        </div>
+        <hr />
+
+
+        <h2 id="decoracao">Decoração de Texto</h2>
+        <h3>A propriedade text-decoration especifica como o texto será decorado.</h3>
+        <p class="none">Este é o estilo de decoração padrão (none).</p>
+        <p class="inherit">Este texto herda a decoração do elemento parente - inherit.</p>
+        <p class="overline">Este é um texto sobrelinhado - overline.</p>
+        <p class="underline">Este texto é sublinhado - underline.</p>
+        <p class="line-through">Este texto é riscado - line-through.</p>
+    </section>
+</body>
+
+</html>

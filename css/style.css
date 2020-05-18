@@ -1,0 +1,122 @@
+/*Podemos comentar no CSS.*/
+/*Configurando estilo menu*/
+nav ul {  font-family: cursive,monospace;
+            text-align: justify;
+        }
+
+
+/*SESSÃO "ADIÇÃO DE ESTILOS"*/
+/*Exemplo de folha de estilo externa*/
+p#externo {font-style: italic;
+    background-color: lavender}
+
+/*configurando tamanhos dos headings*/
+h1 {font-size: xx-large;
+    color: white;
+    background: grey;}
+h2 {font-size: x-large;}
+h3 {font-size: large;
+    font-weight: 550;}
+
+/*Adicionando margem à classe subitem */
+.subitem {margin-left: 3vw;}
+/*Estilo de parágrafos*/
+p {text-align: justify;
+    margin-right: 5vw; 
+    text-indent: 0vw;}
+/*Estilo de parágrafos em exemplos*/
+#examples p{text-indent: 0vw}
+
+/*Centralizando tabela de fontes*/
+#fontes {display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50vw}
+
+/*Estilos de fontes*/
+.serif {
+    font-family: "Times New Roman", Times, serif;
+ }
+.sansserif {
+    font-family: Helvetica, Arial, sans-serif;
+ }
+.monospace {
+    font-family: "Courier New", Courier, monospace;
+ }
+.cursive {
+    font-family: cursive;
+ }
+.fantasy {
+    font-family: Blippo, fantasy;
+ }
+ /*Tamanhos de fontes*/
+.xxsmall{font-size: xx-small;}
+.xsmall{font-size: x-small;}
+.small{font-size: small;}
+.medium{font-size: medium;}
+.large{font-size: large;}
+.larger{font-size: larger;}
+.xlarge{font-size: x-large;}
+.xxlarge{font-size: xx-large;}
+
+/*Estilos da fonte*/
+.italic{font-style: italic;}
+.negrito{font-weight: bold;}
+.lighter{font-weight: 100;}
+.lightest{font-weight: lighter;}
+.light{font-weight: 400;}
+.bold{font-weight: 700;}
+.bolder{font-weight: 900;}
+
+.caps{text-transform: uppercase;}
+
+.vermelho{color: rgb(255,0,0);}
+.verde{color: #00ff00;}
+.azul{color: blue;}
+p.left{text-align: left;
+    text-indent: 0vw;}
+p.right{text-align: right;}
+p.center{text-align: center;}
+p.justify{text-align: justify;}
+
+td.top {
+    vertical-align: top;
+ }
+ td.middle {
+    vertical-align: middle;
+ }
+ td.bottom {
+    vertical-align: bottom;
+ }
+ span.baseline {
+    vertical-align: baseline;
+}
+span.sub {
+    vertical-align: sub;
+}
+span.super {
+    vertical-align: super;
+}
+span.pixel {
+    vertical-align: -10px;
+}
+.paragraph {height: 100px; width: 80vw;
+    background-color: LightSkyBlue;
+    display: table-cell;
+    vertical-align: middle;
+}
+p.none {
+    text-decoration: none;
+ }
+ p.inherit {
+    text-decoration: inherit;
+ }
+ p.overline {
+    text-decoration: overline;
+ }
+ p.underline {
+    text-decoration: underline;
+ }
+ p.line-through {
+    text-decoration: line-through;
+ }
